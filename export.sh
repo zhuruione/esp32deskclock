@@ -1,0 +1,1 @@
+/home/zr/app/esp-idf/export.sh
