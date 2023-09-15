@@ -1,0 +1,2 @@
+/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ar qc libmy_spi_flash.a CMakeFiles/__idf_my_spi_flash.dir/driver_spi.c.obj CMakeFiles/__idf_my_spi_flash.dir/file_zr.c.obj CMakeFiles/__idf_my_spi_flash.dir/flash_esp.c.obj CMakeFiles/__idf_my_spi_flash.dir/my_flash_spi.c.obj
+/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib libmy_spi_flash.a

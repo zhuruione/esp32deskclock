@@ -1,0 +1,2 @@
+/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ar qc libmy_wifi.a CMakeFiles/__idf_my_wifi.dir/client.c.obj CMakeFiles/__idf_my_wifi.dir/zr_wifi.c.obj
+/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib libmy_wifi.a

@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="mbed TLS"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\app\;CMake Files\..\..\..\..\app\esp-idf\;CMake Files\..\..\..\..\app\esp-idf\components\;CMake Files\..\..\..\..\app\esp-idf\components\xtensa\;CMake Files\..\..\..\..\app\esp-idf\components\esp_ringbuf\;CMake Files\..\..\..\..\app\esp-idf\components\efuse\;CMake Files\..\..\..\..\app\esp-idf\components\efuse\esp32\;CMake Files\..\..\..\..\app\esp-idf\components\driver\;CMake Files\..\..\..\..\app\esp-idf\components\esp_pm\;CMake Files\..\..\..\..\app\esp-idf\components\mbedtls\;CMake Files\..\..\..\..\app\esp-idf\components\mbedtls\mbedtls\;CMake Files\..\..\..\..\app\esp-idf\components\mbedtls\mbedtls\include\;CMake Files\..\..\..\..\app\esp-idf\components\mbedtls\mbedtls\3rdparty\;CMake Files\..\..\..\..\app\esp-idf\components\mbedtls\mbedtls\library\;CMake Files\..\..\..\..\app\esp-idf\components\esp_app_format\;CMake Files\..\..\..\..\app\esp-idf\components\bootloader_support\;CMake Files\..\..\..\..\app\esp-idf\components\bootloader\;CMake Files\..\..\..\..\app\esp-idf\components\bootloader\subproject\;CMake Files\..\..\..\..\app\esp-idf\components\bootloader\subproject\components\;CMake Files\..\..\..\..\app\esp-idf\components\bootloader\subproject\components\micro-ecc\;CMake Files\..\..\..\..\app\esp-idf\components\bootloader\subproject\components\micro-ecc\micro-ecc\;CMake Files\..\..\..\..\app\esp-idf\components\esptool_py\;CMake Files\..\..\..\..\app\esp-idf\components\partition_table\;CMake Files\..\..\..\..\app\esp-idf\components\esp_partition\;CMake Files\..\..\..\..\app\esp-idf\components\app_update\;CMake Files\..\..\..\..\app\esp-idf\components\spi_flash\;CMake Files\..\..\..\..\app\esp-idf\components\pthread\;CMake Files\..\..\..\..\app\esp-idf\components\esp_system\;CMake Files\..\..\..\..\app\esp-idf\components\esp_system\ld\;CMake Files\..\..\..\..\app\esp-idf\components\esp_system\port\;CMake Files\..\..\..\..\app\esp-idf\components\esp_system\port\soc\;CMake Files\..\..\..\..\app\esp-idf\components\esp_system\port\soc\esp32\;CMake Files\..\..\..\..\app\esp-idf\components\esp_rom\;CMake Files\..\..\..\..\app\esp-idf\components\hal\;CMake Files\..\..\..\..\app\esp-idf\components\log\;CMake Files\..\..\..\..\app\esp-idf\components\heap\;CMake Files\..\..\..\..\app\esp-idf\components\heap\tlsf\;CMake Files\..\..\..\..\app\esp-idf\components\soc\;CMake Files\..\..\..\..\app\esp-idf\components\esp_hw_support\;CMake Files\..\..\..\..\app\esp-idf\components\esp_hw_support\port\;CMake Files\..\..\..\..\app\esp-idf\components\esp_hw_support\port\esp32\;CMake Files\..\..\..\..\app\esp-idf\components\freertos\;CMake Files\..\..\..\..\app\esp-idf\components\newlib\;CMake Files\..\..\..\..\app\esp-idf\components\newlib\port\;CMake Files\..\..\..\..\app\esp-idf\components\cxx\;CMake Files\..\..\..\..\app\esp-idf\components\esp_common\;CMake Files\..\..\..\..\app\esp-idf\components\esp_timer\;CMake Files\..\..\..\..\app\esp-idf\components\app_trace\;CMake Files\..\..\..\..\app\esp-idf\components\esp_event\;CMake Files\..\..\..\..\app\esp-idf\components\nvs_flash\;CMake Files\..\..\..\..\app\esp-idf\components\esp_phy\;CMake Files\..\..\..\..\app\esp-idf\components\esp_phy\lib\;CMake Files\..\..\..\..\app\esp-idf\components\vfs\;CMake Files\..\..\..\..\app\esp-idf\components\lwip\;CMake Files\..\..\..\..\app\esp-idf\components\lwip\lwip\;CMake Files\..\..\..\..\app\esp-idf\components\esp_netif_stack\;CMake Files\..\..\..\..\app\esp-idf\components\esp_netif\;CMake Files\..\..\..\..\app\esp-idf\components\wpa_supplicant\;CMake Files\..\..\..\..\app\esp-idf\components\esp_wifi\;CMake Files\..\..\..\..\app\esp-idf\components\esp_wifi\lib\;CMake Files\..\..\..\..\app\esp-idf\components\bt\;CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\;CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32\;CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32c2\;CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32c2\esp32c2-bt-lib\;CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32c3_family\;CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32c6\;CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32c6\esp32c6-bt-lib\;CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32h2\;CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32h2\esp32h2-bt-lib\;CMake Files\..\..\..\..\app\esp-idf\components\bt\host\;CMake Files\..\..\..\..\app\esp-idf\components\bt\host\nimble\;CMake Files\..\..\..\..\app\esp-idf\components\bt\host\nimble\nimble\;CMake Files\..\..\..\..\app\esp-idf\components\unity\;CMake Files\..\..\..\..\app\esp-idf\components\unity\unity\;CMake Files\..\..\..\..\app\esp-idf\components\cmock\;CMake Files\..\..\..\..\app\esp-idf\components\cmock\CMock\;CMake Files\..\..\..\..\app\esp-idf\components\console\;CMake Files\..\..\..\..\app\esp-idf\components\http_parser\;CMake Files\..\..\..\..\app\esp-idf\components\esp-tls\;CMake Files\..\..\..\..\app\esp-idf\components\esp_adc\;CMake Files\..\..\..\..\app\esp-idf\components\esp_eth\;CMake Files\..\..\..\..\app\esp-idf\components\esp_gdbstub\;CMake Files\..\..\..\..\app\esp-idf\components\esp_hid\;CMake Files\..\..\..\..\app\esp-idf\components\tcp_transport\;CMake Files\..\..\..\..\app\esp-idf\components\esp_http_client\;CMake Files\..\..\..\..\app\esp-idf\components\esp_http_server\;CMake Files\..\..\..\..\app\esp-idf\components\esp_https_ota\;CMake Files\..\..\..\..\app\esp-idf\components\esp_https_server\;CMake Files\..\..\..\..\app\esp-idf\components\esp_lcd\;CMake Files\..\..\..\..\app\esp-idf\components\protobuf-c\;CMake Files\..\..\..\..\app\esp-idf\components\protobuf-c\protobuf-c\;CMake Files\..\..\..\..\app\esp-idf\components\protocomm\;CMake Files\..\..\..\..\app\esp-idf\components\esp_local_ctrl\;CMake Files\..\..\..\..\app\esp-idf\components\esp_psram\;CMake Files\..\..\..\..\app\esp-idf\components\espcoredump\;CMake Files\..\..\..\..\app\esp-idf\components\wear_levelling\;CMake Files\..\..\..\..\app\esp-idf\components\sdmmc\;CMake Files\..\..\..\..\app\esp-idf\components\fatfs\;CMake Files\..\..\..\..\app\esp-idf\components\idf_test\;CMake Files\..\..\..\..\app\esp-idf\components\ieee802154\;CMake Files\..\..\..\..\app\esp-idf\components\ieee802154\lib\;CMake Files\..\..\..\..\app\esp-idf\components\json\;CMake Files\..\..\..\..\app\esp-idf\components\json\cJSON\;CMake Files\..\..\..\..\app\esp-idf\components\mqtt\;CMake Files\..\..\..\..\app\esp-idf\components\mqtt\esp-mqtt\;CMake Files\..\..\..\..\app\esp-idf\components\openthread\;CMake Files\..\..\..\..\app\esp-idf\components\openthread\lib\;CMake Files\..\..\..\..\app\esp-idf\components\openthread\openthread\;CMake Files\..\..\..\..\app\esp-idf\components\perfmon\;CMake Files\..\..\..\..\app\esp-idf\components\spiffs\;CMake Files\..\..\..\..\app\esp-idf\components\spiffs\spiffs\;CMake Files\..\..\..\..\app\esp-idf\components\ulp\;CMake Files\..\..\..\..\app\esp-idf\components\usb\;CMake Files\..\..\..\..\app\esp-idf\components\wifi_provisioning\;CMake Files\..\..\..\..\app\esp-idf\tools\;CMake Files\..\..\..\..\app\esp-idf\tools\cmake\;CMake Files\..\..\..\..\app\esp-idf\tools\cmake\third_party\;CMake Files\..\..\..\..\app\esp-idf\tools\kconfig_new\;CMake Files\..\..\..\..\app\esp-idf\.git\;CMake Files\..\..\..\..\app\esp-idf\.git\refs\;CMake Files\..\..\..\..\app\esp-idf\.git\refs\heads\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bootloader\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bootloader\subproject\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bootloader\subproject\components\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bootloader\subproject\components\micro-ecc\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bootloader\subproject\components\micro-ecc\micro-ecc\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32c2\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32c2\esp32c2-bt-lib\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32c3_family\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32c6\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32c6\esp32c6-bt-lib\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32h2\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32h2\esp32h2-bt-lib\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\host\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\host\nimble\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\host\nimble\nimble\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\cmock\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\cmock\CMock\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\esp_phy\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\esp_phy\lib\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\esp_wifi\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\esp_wifi\lib\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\heap\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\heap\tlsf\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\ieee802154\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\ieee802154\lib\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\json\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\json\cJSON\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\lwip\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\lwip\lwip\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\mbedtls\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\mbedtls\mbedtls\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\mqtt\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\mqtt\esp-mqtt\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\openthread\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\openthread\lib\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\openthread\openthread\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\protobuf-c\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\protobuf-c\protobuf-c\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\spiffs\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\spiffs\spiffs\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\unity\;CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\unity\unity\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\esp-idf\;CMake Files\cmake-build-debug\esp-idf\bootloader\;CMake Files\cmake-build-debug\esp-idf\esptool_py\;CMake Files\cmake-build-debug\esp-idf\partition_table\;CMake Files\cmake-build-debug\config\;CMake Files\cmake-build-debug\bootloader-prefix\;CMake Files\cmake-build-debug\bootloader-prefix\tmp\;CMake Files\main\;CMake Files\components\;CMake Files\components\my_wifi\;CMake Files\components\client\;CMake Files\components\data_structure\;CMake Files\components\lvgl\;CMake Files\components\lv_examples\;CMake Files\components\lvgl_esp32_drivers\;CMake Files\components\my_spi_flash\;CMake Files\components\my_tick\;CMake Files\components\my_windows\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="apidoc">
+				<Option working_dir="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/Makefile&quot;  VERBOSE=1 apidoc"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mbedcrypto">
+				<Option output="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-DIDF_VER=&quot;v5.1-dev-3214-g3ab553e6ad&quot;"/>
+					<Add option="-DESP_PLATFORM"/>
+					<Add option="-D_POSIX_READER_WRITER_LOCKS"/>
+					<Add directory="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/config"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/mbedtls/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library"/>
+					<Add directory="/home/zr/app/esp-idf/components/newlib/platform_include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/FreeRTOS-Kernel/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/esp_additions/include/freertos"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/esp_additions/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include/soc"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include/soc/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/port/esp32/."/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/port/esp32/private_include"/>
+					<Add directory="/home/zr/app/esp-idf/components/heap/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/log/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/platform_port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/include/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_common/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/port/soc"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/port/include/private"/>
+					<Add directory="/home/zr/app/esp-idf/components/xtensa/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/xtensa/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include/apps"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include/apps/sntp"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/lwip/src/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/freertos/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/esp32xx/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/esp32xx/include/arch"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 mbedcrypto"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mbedcrypto/fast">
+				<Option output="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-DIDF_VER=&quot;v5.1-dev-3214-g3ab553e6ad&quot;"/>
+					<Add option="-DESP_PLATFORM"/>
+					<Add option="-D_POSIX_READER_WRITER_LOCKS"/>
+					<Add directory="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/config"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/mbedtls/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library"/>
+					<Add directory="/home/zr/app/esp-idf/components/newlib/platform_include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/FreeRTOS-Kernel/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/esp_additions/include/freertos"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/esp_additions/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include/soc"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include/soc/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/port/esp32/."/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/port/esp32/private_include"/>
+					<Add directory="/home/zr/app/esp-idf/components/heap/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/log/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/platform_port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/include/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_common/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/port/soc"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/port/include/private"/>
+					<Add directory="/home/zr/app/esp-idf/components/xtensa/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/xtensa/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include/apps"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include/apps/sntp"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/lwip/src/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/freertos/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/esp32xx/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/esp32xx/include/arch"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 mbedcrypto/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mbedx509">
+				<Option output="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/libmbedx509.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-DIDF_VER=&quot;v5.1-dev-3214-g3ab553e6ad&quot;"/>
+					<Add option="-DESP_PLATFORM"/>
+					<Add option="-D_POSIX_READER_WRITER_LOCKS"/>
+					<Add directory="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/config"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/mbedtls/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library"/>
+					<Add directory="/home/zr/app/esp-idf/components/newlib/platform_include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/FreeRTOS-Kernel/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/esp_additions/include/freertos"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/esp_additions/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include/soc"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include/soc/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/port/esp32/."/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/port/esp32/private_include"/>
+					<Add directory="/home/zr/app/esp-idf/components/heap/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/log/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/platform_port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/include/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_common/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/port/soc"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/port/include/private"/>
+					<Add directory="/home/zr/app/esp-idf/components/xtensa/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/xtensa/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include/apps"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include/apps/sntp"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/lwip/src/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/freertos/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/esp32xx/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/esp32xx/include/arch"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 mbedx509"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mbedx509/fast">
+				<Option output="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/libmbedx509.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-DIDF_VER=&quot;v5.1-dev-3214-g3ab553e6ad&quot;"/>
+					<Add option="-DESP_PLATFORM"/>
+					<Add option="-D_POSIX_READER_WRITER_LOCKS"/>
+					<Add directory="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/config"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/mbedtls/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library"/>
+					<Add directory="/home/zr/app/esp-idf/components/newlib/platform_include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/FreeRTOS-Kernel/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/esp_additions/include/freertos"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/esp_additions/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include/soc"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include/soc/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/port/esp32/."/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/port/esp32/private_include"/>
+					<Add directory="/home/zr/app/esp-idf/components/heap/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/log/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/platform_port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/include/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_common/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/port/soc"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/port/include/private"/>
+					<Add directory="/home/zr/app/esp-idf/components/xtensa/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/xtensa/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include/apps"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include/apps/sntp"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/lwip/src/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/freertos/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/esp32xx/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/esp32xx/include/arch"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 mbedx509/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mbedtls">
+				<Option output="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/libmbedtls.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-DIDF_VER=&quot;v5.1-dev-3214-g3ab553e6ad&quot;"/>
+					<Add option="-DESP_PLATFORM"/>
+					<Add option="-D_POSIX_READER_WRITER_LOCKS"/>
+					<Add directory="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/config"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/mbedtls/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library"/>
+					<Add directory="/home/zr/app/esp-idf/components/newlib/platform_include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/FreeRTOS-Kernel/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/esp_additions/include/freertos"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/esp_additions/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include/soc"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include/soc/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/port/esp32/."/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/port/esp32/private_include"/>
+					<Add directory="/home/zr/app/esp-idf/components/heap/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/log/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/platform_port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/include/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_common/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/port/soc"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/port/include/private"/>
+					<Add directory="/home/zr/app/esp-idf/components/xtensa/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/xtensa/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include/apps"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include/apps/sntp"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/lwip/src/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/freertos/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/esp32xx/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/esp32xx/include/arch"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 mbedtls"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mbedtls/fast">
+				<Option output="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/libmbedtls.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
+					<Add option="-D_GNU_SOURCE"/>
+					<Add option="-DIDF_VER=&quot;v5.1-dev-3214-g3ab553e6ad&quot;"/>
+					<Add option="-DESP_PLATFORM"/>
+					<Add option="-D_POSIX_READER_WRITER_LOCKS"/>
+					<Add directory="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/config"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/mbedtls/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library"/>
+					<Add directory="/home/zr/app/esp-idf/components/newlib/platform_include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/FreeRTOS-Kernel/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/esp_additions/include/freertos"/>
+					<Add directory="/home/zr/app/esp-idf/components/freertos/esp_additions/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include/soc"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/include/soc/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/port/esp32/."/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_hw_support/port/esp32/private_include"/>
+					<Add directory="/home/zr/app/esp-idf/components/heap/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/log/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/soc/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/hal/platform_port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/include/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_rom/esp32"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_common/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/port/soc"/>
+					<Add directory="/home/zr/app/esp-idf/components/esp_system/port/include/private"/>
+					<Add directory="/home/zr/app/esp-idf/components/xtensa/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/xtensa/esp32/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include/apps"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/include/apps/sntp"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/lwip/src/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/freertos/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/esp32xx/include"/>
+					<Add directory="/home/zr/app/esp-idf/components/lwip/port/esp32xx/include/arch"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/xtensa-esp32-elf"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include/c++/11.2.0/backward"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/include-fixed"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/sys-include"/>
+					<Add directory="/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 mbedtls/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib">
+				<Option working_dir="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 lib"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/mbedtls/mbedtls/library/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/aes.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/aesni.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/aesni.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/aria.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/asn1parse.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/asn1write.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/base64.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/bignum.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/bignum_core.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/bignum_core.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/bignum_mod.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/bignum_mod.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/bignum_mod_raw.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/bignum_mod_raw.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/camellia.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ccm.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/chacha20.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/chachapoly.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/cipher.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/cipher_wrap.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/cipher_wrap.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/cmac.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/constant_time.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ctr_drbg.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/debug.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/des.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/dhm.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ecdh.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ecdsa.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ecjpake.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ecp.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ecp_curves.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/entropy.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/entropy_poll.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/entropy_poll.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/error.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/gcm.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/hash_info.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/hash_info.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/hkdf.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/hmac_drbg.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/lmots.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/lmots.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/lms.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/md.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/md5.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/memory_buffer_alloc.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/mps_reader.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/mps_reader.h">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/mps_trace.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/mps_trace.h">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/nist_kw.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/oid.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/padlock.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/padlock.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/pem.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/pk.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/pk_wrap.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/pk_wrap.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/pkcs12.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/pkcs5.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/pkcs7.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/pkparse.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/pkwrite.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/pkwrite.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/platform.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/platform_util.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/poly1305.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_aead.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_aead.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_cipher.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_cipher.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_client.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_driver_wrappers.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_driver_wrappers.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_ecp.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_ecp.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_hash.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_hash.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_mac.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_mac.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_pake.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_rsa.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_rsa.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_se.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_se.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_slot_management.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_slot_management.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_storage.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_storage.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/psa_its_file.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ripemd160.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/rsa.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/rsa_alt_helpers.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/rsa_alt_helpers.h">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/sha1.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/sha256.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/sha512.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_cache.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_ciphersuites.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_client.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_client.h">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_cookie.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_debug_helpers_generated.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_msg.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_ticket.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_tls.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_tls12_client.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_tls12_server.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_tls13_client.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_tls13_generic.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_tls13_keys.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_tls13_keys.h">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/ssl_tls13_server.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/threading.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/timing.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/version.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/version_features.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/x509.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/x509_create.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/x509_crl.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/x509_crt.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/x509_csr.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/x509write_crt.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/mbedtls/library/x509write_csr.c">
+			<Option target="mbedx509"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/aes/block/esp_aes.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/aes/esp_aes_common.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/aes/esp_aes_gcm.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/aes/esp_aes_xts.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/esp32/bignum.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/esp_bignum.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/esp_hardware.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/esp_mem.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/esp_timing.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/mbedtls_debug.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/md/esp_md.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/net_sockets.c">
+			<Option target="mbedtls"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/sha/esp_sha.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/sha/parallel_engine/esp_sha1.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/sha/parallel_engine/esp_sha256.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/sha/parallel_engine/esp_sha512.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/app/esp-idf/components/mbedtls/port/sha/parallel_engine/sha.c">
+			<Option target="mbedcrypto"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/sdkconfig">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/xtensa/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\xtensa\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/xtensa/project_include.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\xtensa\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_ringbuf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_ringbuf\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/efuse/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\efuse\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/efuse/esp32/sources.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\efuse\esp32\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/driver/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\driver\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_pm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_pm\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/mbedtls/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\mbedtls\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/mbedtls/mbedtls/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\mbedtls\mbedtls\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\mbedtls\mbedtls\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/mbedtls/mbedtls/include/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\mbedtls\mbedtls\include\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/mbedtls/mbedtls/3rdparty/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\mbedtls\mbedtls\3rdparty\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/mbedtls/mbedtls/library/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\mbedtls\mbedtls\library\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_app_format/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_app_format\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/bootloader_support/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\bootloader_support\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/bootloader/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\bootloader\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/bootloader/project_include.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\bootloader\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/bootloader/subproject/components/micro-ecc/micro-ecc/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\bootloader\subproject\components\micro-ecc\micro-ecc\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esptool_py/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esptool_py\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esptool_py/espefuse.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esptool_py\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esptool_py/project_include.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esptool_py\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/partition_table/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\partition_table\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/partition_table/partitions_singleapp.csv">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\partition_table\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/partition_table/project_include.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\partition_table\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_partition/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_partition\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/app_update/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\app_update\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/spi_flash/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\spi_flash\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/pthread/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\pthread\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_system/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_system\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_system/ld/ld.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_system\ld\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_system/port/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_system\port\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_system/port/soc/esp32/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_system\port\soc\esp32\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_rom/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_rom\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/hal/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\hal\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/log/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\log\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/heap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\heap\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/heap/tlsf/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\heap\tlsf\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/soc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\soc\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_hw_support/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_hw_support\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_hw_support/port/esp32/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_hw_support\port\esp32\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/freertos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\freertos\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/newlib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\newlib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/newlib/port/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\newlib\port\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/cxx/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\cxx\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_common\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_common/project_include.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_common\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_timer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_timer\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/app_trace/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\app_trace\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/app_trace/project_include.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\app_trace\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_event/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_event\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/nvs_flash/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\nvs_flash\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_phy/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_phy\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_phy/lib/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_phy\lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/vfs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\vfs\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/lwip/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\lwip\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/lwip/lwip/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\lwip\lwip\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_netif_stack/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_netif_stack\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_netif/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_netif\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/wpa_supplicant/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\wpa_supplicant\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_wifi/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_wifi\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_wifi/lib/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_wifi\lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/bt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\bt\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/bt/controller/lib_esp32/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/bt/controller/lib_esp32c2/esp32c2-bt-lib/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32c2\esp32c2-bt-lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/bt/controller/lib_esp32c3_family/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32c3_family\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/bt/controller/lib_esp32c6/esp32c6-bt-lib/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32c6\esp32c6-bt-lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/bt/controller/lib_esp32h2/esp32h2-bt-lib/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\bt\controller\lib_esp32h2\esp32h2-bt-lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/bt/host/nimble/nimble/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\bt\host\nimble\nimble\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/unity/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\unity\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/unity/unity/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\unity\unity\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/cmock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\cmock\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/cmock/CMock/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\cmock\CMock\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/console/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\console\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/http_parser/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\http_parser\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp-tls/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp-tls\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_adc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_adc\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_eth/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_eth\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_gdbstub/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_gdbstub\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_hid/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_hid\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/tcp_transport/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\tcp_transport\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_http_client/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_http_client\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_http_server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_http_server\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_https_ota/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_https_ota\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_https_server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_https_server\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_lcd/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_lcd\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/protobuf-c/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\protobuf-c\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/protobuf-c/protobuf-c/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\protobuf-c\protobuf-c\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/protocomm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\protocomm\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_local_ctrl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_local_ctrl\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_psram/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_psram\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/esp_psram/project_include.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\esp_psram\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/espcoredump/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\espcoredump\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/wear_levelling/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\wear_levelling\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/sdmmc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\sdmmc\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/fatfs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\fatfs\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/fatfs/project_include.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\fatfs\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/idf_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\idf_test\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/ieee802154/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\ieee802154\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/ieee802154/lib/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\ieee802154\lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/json/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\json\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/json/cJSON/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\json\cJSON\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/mqtt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\mqtt\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/mqtt/esp-mqtt/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\mqtt\esp-mqtt\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/mqtt/esp-mqtt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\mqtt\esp-mqtt\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/openthread/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\openthread\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/openthread/lib/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\openthread\lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/openthread/openthread/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\openthread\openthread\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/perfmon/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\perfmon\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/spiffs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\spiffs\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/spiffs/project_include.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\spiffs\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/spiffs/spiffs/.git">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\spiffs\spiffs\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/ulp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\ulp\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/ulp/project_include.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\ulp\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/usb/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\usb\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/components/wifi_provisioning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\components\wifi_provisioning\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/build.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/component.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/depgraph.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/dfu.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/git_submodules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/idf.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/kconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/ldgen.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/project.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/project_description.json.in">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/tool_version_check.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/toolchain-esp32.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/uf2.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/utilities.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/third_party/GetGitRevisionDescription.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\third_party\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/cmake/third_party/GetGitRevisionDescription.cmake.in">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\cmake\third_party\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/kconfig_new/confgen.py">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\kconfig_new\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/tools/kconfig_new/config.env.in">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\tools\kconfig_new\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/refs/heads/master">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\refs\heads\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/bootloader/subproject/components/micro-ecc/micro-ecc/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bootloader\subproject\components\micro-ecc\micro-ecc\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/bt/controller/lib_esp32/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/bt/controller/lib_esp32c2/esp32c2-bt-lib/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32c2\esp32c2-bt-lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/bt/controller/lib_esp32c3_family/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32c3_family\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/bt/controller/lib_esp32c6/esp32c6-bt-lib/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32c6\esp32c6-bt-lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/bt/controller/lib_esp32h2/esp32h2-bt-lib/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\controller\lib_esp32h2\esp32h2-bt-lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/bt/host/nimble/nimble/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\bt\host\nimble\nimble\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/cmock/CMock/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\cmock\CMock\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/esp_phy/lib/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\esp_phy\lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/esp_wifi/lib/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\esp_wifi\lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/heap/tlsf/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\heap\tlsf\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/ieee802154/lib/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\ieee802154\lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/json/cJSON/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\json\cJSON\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/lwip/lwip/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\lwip\lwip\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/mbedtls/mbedtls/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\mbedtls\mbedtls\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/mqtt/esp-mqtt/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\mqtt\esp-mqtt\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/openthread/lib/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\openthread\lib\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/openthread/openthread/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\openthread\openthread\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/protobuf-c/protobuf-c/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\protobuf-c\protobuf-c\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/spiffs/spiffs/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\spiffs\spiffs\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/../../../../app/esp-idf/.git/modules/components/unity/unity/HEAD">
+			<Option virtualFolder="CMake Files\..\..\..\..\app\esp-idf\.git\modules\components\unity\unity\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/app-flash_args">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/bootloader-flash_args">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/flash_args">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/flash_args.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/ldgen_libraries.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/bootloader/bootloader-flash_args.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\esp-idf\bootloader\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/esptool_py/app-flash_args.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\esp-idf\esptool_py\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/esptool_py/flasher_args.json.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\esp-idf\esptool_py\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/esp-idf/partition_table/partition-table-flash_args.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\esp-idf\partition_table\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/config/sdkconfig.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\config\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/config/sdkconfig.h">
+			<Option virtualFolder="CMake Files\cmake-build-debug\config\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/cmake-build-debug/bootloader-prefix/tmp/bootloader-mkdirs.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\bootloader-prefix\tmp\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\main\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/components/my_wifi/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\components\my_wifi\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/components/client/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\components\client\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/components/data_structure/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\components\data_structure\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/components/lvgl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\components\lvgl\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/components/lv_examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\components\lv_examples\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/components/lvgl_esp32_drivers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\components\lvgl_esp32_drivers\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/components/my_spi_flash/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\components\my_spi_flash\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/components/my_tick/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\components\my_tick\"/>
+		</Unit>
+		<Unit filename="/home/zr/桌面/esp/espProject/esp_main/components/my_windows/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\components\my_windows\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

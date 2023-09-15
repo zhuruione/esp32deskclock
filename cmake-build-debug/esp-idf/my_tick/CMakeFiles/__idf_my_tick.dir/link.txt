@@ -1,0 +1,2 @@
+/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ar qc libmy_tick.a CMakeFiles/__idf_my_tick.dir/my_tick.c.obj
+/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib libmy_tick.a

@@ -1,0 +1,2 @@
+/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ar qc liblvgl_esp32_drivers.a CMakeFiles/__idf_lvgl_esp32_drivers.dir/lvgl_helpers.c.obj CMakeFiles/__idf_lvgl_esp32_drivers.dir/lvgl_tft/disp_driver.c.obj CMakeFiles/__idf_lvgl_esp32_drivers.dir/lvgl_tft/ili9341.c.obj CMakeFiles/__idf_lvgl_esp32_drivers.dir/lvgl_tft/disp_spi.c.obj
+/home/zr/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib liblvgl_esp32_drivers.a
